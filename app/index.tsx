@@ -1,15 +1,11 @@
+import theme from "@/src/global/styles/theme";
 import { Text, View } from "react-native";
+import { ThemeProvider } from "styled-components";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <ThemeProvider theme={theme}>
+
+    </ThemeProvider>
   );
 }
